@@ -1,92 +1,93 @@
-# 🏥 MediFlow AI: Touchless Medical Screen Navigation Using Hand Gesture Recognition
+# MediFlow AI: Touchless Medical Screen Navigation Using Hand Gesture Recognition
 
-MediFlow AI is an intelligent, touchless medical image navigation system that enables healthcare professionals to interact with medical images using hand gestures instead of traditional input devices such as a mouse or keyboard.
+## Overview
 
-The system uses Artificial Intelligence, Computer Vision, Deep Learning, and Hand Gesture Recognition to create a contactless environment for navigating medical images.
+MediFlow AI is an intelligent medical image navigation system that enables healthcare professionals to interact with medical images through hand gestures instead of traditional input devices such as a mouse or keyboard.
 
-In hospitals, doctors often need to examine X-rays, CT scans, MRI scans, and other medical images while performing procedures. Touching a keyboard or mouse repeatedly can interrupt the workflow and increase the risk of contamination.
+The project combines Artificial Intelligence, Computer Vision, Deep Learning, and Hand Gesture Recognition to create a touchless environment for medical image manipulation. The system captures hand movements through a webcam, recognizes predefined gestures, and converts them into navigation commands.
 
-MediFlow AI solves this problem by allowing users to control medical images using simple hand gestures captured through a webcam.
-
----
-
-# 🎯 Problem Statement
-
-Medical professionals frequently interact with digital medical images while performing examinations and procedures.
-
-Traditional input devices such as keyboards and mice require physical contact, which can:
-
-- Increase the risk of contamination
-- Interrupt medical procedures
-- Reduce workflow efficiency
-- Create hygiene concerns in sterile environments
-
-There is a need for a touchless and intuitive system that allows doctors to interact with medical images without physical contact.
+The primary objective of this project is to improve workflow efficiency and reduce physical contact with computer peripherals in medical environments.
 
 ---
 
-# 💡 Proposed Solution
+## Problem Statement
 
-MediFlow AI introduces a gesture-controlled interface that uses a webcam to detect and recognize hand movements in real time.
+Medical professionals frequently interact with digital medical images such as X-rays, CT scans, MRI scans, and ultrasound images during examinations and medical procedures.
 
-The system captures hand gestures, processes them using MediaPipe and TensorFlow, and performs specific actions such as:
+Traditional input devices require physical contact, which can create several challenges:
 
-- Moving the pointer
-- Navigating between images
-- Zooming in
-- Zooming out
+- Increased risk of contamination
+- Interruptions during medical procedures
+- Reduced workflow efficiency
+- Difficulty maintaining sterile conditions
 
-This creates a completely touch-free interaction system for medical image navigation.
-
----
-
-# ✨ Key Features
-
-- 🖐️ Real-time hand gesture recognition
-- 🏥 Touchless medical image navigation
-- 🔍 Zoom in and zoom out functionality
-- ➡️ Next image navigation
-- ⬅️ Previous image navigation
-- 🖱️ Pointer control using finger movement
-- ⚡ Fast gesture detection
-- 📷 Webcam-based interaction
-- 🤖 AI-powered image processing
-- 🧠 Deep learning-based hand recognition
+A contactless system that allows medical professionals to navigate medical images without touching a keyboard or mouse can significantly improve the clinical workflow.
 
 ---
 
-# 🛠️ Technologies Used
+## Proposed Solution
+
+MediFlow AI provides a gesture-controlled interface that enables users to navigate medical images using simple hand movements.
+
+The system captures video frames through a webcam and processes them using Computer Vision and Deep Learning techniques. Hand landmarks are detected and analyzed, and the recognized gestures are mapped to specific navigation commands.
+
+The entire interaction process is performed in real time, creating a smooth and intuitive user experience.
+
+---
+
+## Objectives
+
+- Develop a touchless medical image navigation system
+- Implement real-time hand gesture recognition
+- Reduce dependence on traditional input devices
+- Improve workflow efficiency in medical environments
+- Create a hygienic and contactless user interface
+
+---
+
+## Key Features
+
+- Real-time hand gesture recognition
+- Medical image navigation using hand movements
+- Pointer control
+- Image zoom functionality
+- Next and previous image navigation
+- Webcam-based interaction
+- Deep learning-based gesture recognition
+- Real-time image processing
+
+---
+
+## Technologies Used
 
 | Technology | Purpose |
 | --- | --- |
-| Python | Backend development |
+| Python | Core programming language |
 | OpenCV | Image processing |
 | MediaPipe | Hand landmark detection |
 | TensorFlow | Deep learning |
-| NumPy | Numerical computations |
-| Flask | Web framework |
-| PyAutoGUI | Screen control |
 | Keras | Neural network implementation |
+| NumPy | Numerical computation |
+| Flask | Backend framework |
+| PyAutoGUI | System interaction and screen control |
 
 ---
 
-# 🧠 AI and Machine Learning Concepts Used
-
-The project combines multiple AI techniques:
+## Artificial Intelligence and Machine Learning Techniques
 
 ### Computer Vision
 
-- Real-time video capture
+- Video frame capture
 - Image preprocessing
 - Frame analysis
 
 ### Deep Learning
 
-- Hand gesture classification
+- Gesture classification
 - Feature extraction
-- Model prediction
+- Prediction generation
 
-### MediaPipe Hand Tracking
+### Hand Tracking
 
 - Hand landmark detection
 - Finger position identification
@@ -95,42 +96,36 @@ The project combines multiple AI techniques:
 ### Human-Computer Interaction
 
 - Gesture-based navigation
-- Touchless user interface
-- Real-time user feedback
+- Real-time interaction
+- Contactless user interface
 
 ---
 
-# ✋ Hand Gestures and Their Functions
+## Gesture Controls
 
-| Gesture | Action |
+| Gesture | Function |
 | --- | --- |
-| ☝️ One Finger | Pointer Control |
-| ✌️ Two Fingers | Next Image |
-| 🤟 Three Fingers | Previous Image |
-| ✊ Closed Hand | Zoom In |
-| 🖐️ Five Fingers | Zoom Out |
+| One Finger | Pointer Control |
+| Two Fingers | Next Image |
+| Three Fingers | Previous Image |
+| Closed Hand | Zoom In |
+| Five Fingers | Zoom Out |
 
 ---
 
-# 🔄 System Workflow
+## System Workflow
 
-1. The webcam captures the user's hand movements.
-
-2. OpenCV processes the video frames.
-
-3. MediaPipe detects hand landmarks.
-
-4. TensorFlow analyzes the extracted features.
-
-5. The trained model recognizes the gesture.
-
-6. The gesture is mapped to a specific command.
-
-7. The corresponding action is executed.
+1. Capture hand movements through a webcam.
+2. Process video frames using OpenCV.
+3. Detect hand landmarks using MediaPipe.
+4. Extract hand features.
+5. Analyze features using the trained TensorFlow model.
+6. Recognize the corresponding gesture.
+7. Execute the associated navigation command.
 
 ---
 
-# 🏗️ Project Architecture
+## System Architecture
 
 ```
 Webcam
@@ -148,31 +143,31 @@ Medical Image Navigation
 
 ---
 
-# 📁 Project Structure
+## Project Structure
 
 ```
 MediFlow-AI
 │
 ├── app.py
-├── .gitignore
 ├── README.md
 ├── LICENSE
+├── .gitignore
 │
-├── medical_images
-│ ├── 1.jpg
-│ ├── 2.jpg
-│ ├── 3.jpg
-│ └── ...
+├── medical_images/
+│   ├── 1.jpg
+│   ├── 2.jpg
+│   ├── 3.jpg
+│   └── ...
 │
-├── model
-│ └── ResNet50_Hand_frac.h5
+├── model/
+│   └── ResNet50_Hand_frac.h5
 │
-└── venv (ignored)
+└── venv/
 ```
 
 ---
 
-# ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -180,7 +175,7 @@ Clone the repository:
 git clone https://github.com/NIHAL-V-K/MediFlow-AI.git
 ```
 
-Move into the project directory:
+Navigate to the project directory:
 
 ```bash
 cd MediFlow-AI
@@ -192,7 +187,7 @@ Create a virtual environment:
 python -m venv venv
 ```
 
-Activate the virtual environment:
+Activate the virtual environment.
 
 ### Windows
 
@@ -206,7 +201,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-Install the required libraries:
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -220,57 +215,55 @@ python app.py
 
 ---
 
-# 📦 Required Libraries
+## Required Dependencies
 
 ```bash
-pip install opencv-python
-pip install mediapipe
-pip install tensorflow
-pip install numpy
-pip install flask
-pip install pyautogui
-pip install pillow
+opencv-python
+mediapipe
+tensorflow
+numpy
+flask
+pyautogui
+pillow
 ```
 
 ---
 
-# 🚀 Future Enhancements
+## Future Enhancements
 
-- Voice-assisted navigation
+- Voice-controlled navigation
+- Support for additional hand gestures
 - 3D medical image visualization
-- Multiple gesture support
-- Hospital database integration
 - DICOM image support
 - Gesture customization
-- Advanced AI-based recognition
-- Improved medical image analysis
+- Integration with hospital information systems
+- Improved gesture recognition accuracy
 
 ---
 
-# 🎓 Academic Information
+## Applications
 
-**Project Title:**
-
-MediFlow AI: Touchless Medical Screen Navigation Using Hand Gesture Recognition
-
-**Course:**
-
-Master of Computer Applications (MCA)
-
-**Project Type:**
-
-Artificial Intelligence and Computer Vision Project
+- Hospitals
+- Diagnostic centers
+- Radiology departments
+- Surgical environments
+- Medical training laboratories
+- Contactless healthcare systems
 
 ---
 
-# 👨‍💻 Developed By
+## Conclusion
+
+MediFlow AI demonstrates how Artificial Intelligence and Computer Vision can be integrated to create a practical healthcare solution.
+
+By replacing traditional input devices with hand gesture recognition, the system provides a more efficient, intuitive, and hygienic approach to medical image navigation. This project highlights the potential of AI-driven touchless interfaces in modern healthcare environments.
+
+---
+
+## Developer
 
 **Nihal VK**
 
-MCA Student
+Master of Computer Applications (MCA)
 
 Presidency University, Bengaluru
-
----
-
-# ⭐ If you like this project, please consider giving it a star.
