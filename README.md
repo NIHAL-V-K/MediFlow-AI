@@ -1,5 +1,7 @@
 # MediFlow AI: Touchless Medical Screen Navigation Using Hand Gesture Recognition
 
+An AI-powered medical image navigation system that enables healthcare professionals to interact with medical images through real-time hand gesture recognition, eliminating the need for traditional input devices and creating a more efficient and hygienic clinical environment.
+
 ## Overview
 
 MediFlow AI is an intelligent medical image navigation system that enables healthcare professionals to interact with medical images through hand gestures instead of traditional input devices such as a mouse or keyboard.
